@@ -38,7 +38,7 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit
 CBigNum bnProofOfStakeLegacyLimit(~uint256(0) >> 20); // proof of stake target limit from block #15000 and until 20 June 2013, results with 0,00390625 proof of stake difficulty
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20); // proof of stake target limit since 20 June 2013, equal to 0.03125  proof of stake difficulty
 CBigNum bnProofOfStakeHardLimit(~uint256(0) >> 20); // disabled temporarily, will be used in the future to fix minimal proof of stake difficulty at 0.25
-uint256 nPoWBase = uint256("0x00000000ffff0000000000000000000000000000000000000000000000000000"); // difficulty-1 target
+uint256 nPoWBase = uint256("0x00000000ffff00000000000000000000000000000000000000000000000000"); // difficulty-1 target
 
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
@@ -74,7 +74,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "iWalletCoin Signed Message:\n";
+const string strMessageMagic = "Amero Signed Message:\n";
 
 // Settings
 int64_t nTransactionFee = MIN_TX_FEE;
